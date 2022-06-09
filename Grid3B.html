@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Bootstrap and the Grids: Grid 2</title>
+    <title>Bootstrap and the Grids: Grid 3</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,10 +32,10 @@
                     <a class="nav-link" href="/Grid1.html">Grid 1</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Grid2.html">Grid 2</a>
+                    <a class="nav-link" href="/Grid2.html">Grid 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Grid3.html">Grid 3</a>
+                    <a class="nav-link active" aria-current="page" href="/Grid3.html">Grid 3</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Grid4.html">Grid 4</a>
@@ -61,17 +61,45 @@
 </nav>
 
     <main class="flex-shrink-0">
-       <div class="container h-100 minHeight">
-            <div class="row h-100 mt-2 g-2">
-                <div class="col-5">
-                    <div class="bg-secondary text-light h-100">
-                        <h5>Side Nav</h5>
+       <div class="container minHeight h-100">
+        <ul class="nav nav-pills mb-1">
+            <li class="nav-item">
+                <a href="Grid3.html" class="nav-link" aria-current="page">Grid 3</a>
+            </li>
+            <li class="nav-item">
+             <a href="Grid3B.html" class="nav-link active" aria-current="page">Grid 3B</a>
+         </li>
+        </ul>
+            <div class="row h-100">
+                <!-- left column -->
+                <div class="col-7">
+                    <div class="bg-secondary text-light p-2 h-100">
+                        <h1>Article Title</h1>
+                        <p>Lorem ipsum dolor sit amet. Ut nobis dolores <strong>Non galisum eum sint quod non expedita nulla</strong> vel voluptas vitae. Sit dolor doloremque <em>Et quisquam ea amet suscipit est dolorem quia</em> non iure corrupti id rerum tempore 33 incidunt voluptatibus. Nam provident facilis ea iure omnis et quas fugiat id reiciendis magnam sit necessitatibus soluta? </p>
+                        <p>Lorem ipsum dolor sit amet. Ut nobis dolores <strong>Non galisum eum sint quod non expedita nulla</strong> vel voluptas vitae. Sit dolor doloremque <em>Et quisquam ea amet suscipit est dolorem quia</em> non iure corrupti id rerum tempore 33 incidunt voluptatibus. Nam provident facilis ea iure omnis et quas fugiat id reiciendis magnam sit necessitatibus soluta? </p>
+                        <p>Lorem ipsum dolor sit amet. Ut nobis dolores <strong>Non galisum eum sint quod non expedita nulla</strong> vel voluptas vitae. Sit dolor doloremque <em>Et quisquam ea amet suscipit est dolorem quia</em> non iure corrupti id rerum tempore 33 incidunt voluptatibus.</p>
                     </div>
                 </div>
-                <div class="col-7">
-                    <div class="bg-dark text-light h-100">
-                        <h5>Main Content</h5>
+                <!-- right column -->
+                <div class="col-5">
+                    <!-- right top column -->
+                    <div class="bg-secondary text-light p-2">
+                       <form class="d-flex">
+                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="search">
+                           <button class="btn btn-outline-light" type="submit">Search</button>
+                       </form>
                     </div>
+                    <!-- right bottom column -->
+                    <div class="bg-dark text-light mt-2 p-2">
+                        <h5>More Articles</h5>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a href="#">Article One</a></li>
+                            <li class="nav-item"><a href="#">Article Two</a></li>
+                            <li class="nav-item"><a href="#">Article Three</a></li>
+                        </ul>
+                        
+                    </div>
+                    
                 </div>
             </div>
        </div>
